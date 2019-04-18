@@ -2,4 +2,64 @@
     box-sizing: border-box
 body
     display: flex
+    flex-direction: column    
+main
+    display: flex
     flex-direction: column
+    font-family: Tahoma
+    .product_section
+        margin-top: 80px
+        display: flex
+        flex-flow: row wrap
+        justify-content: center
+        img
+            margin-right: 75px
+        h1 
+            font-size: 48px
+            margin-bottom: 0
+        h2 
+            margin-top: 7px
+            padding-left: 1px
+            font:
+                size: 30px  
+                weight: normal      
+        &_info
+            width: 550px
+            &_buttons
+                display: flex
+                flex-flow: row wrap
+            &_description
+                
+                font-style: 18px
+            &_price
+                font-size: 48px
+                color: #313131
+                margin: 48px 0
+            &_buy_btn
+                margin-right: 40px
+                
+                
+                
+.main_btn
+    color: #fff
+    text-decoration: none
+    font:
+        weight: bold
+        size: 24px
+    background-color: #f15921
+    padding: 20px 40px
+    border-radius: 5px
+    margin: 15px 0
+.alt_btn
+    color: #f15921
+    text-decoration: none
+    font:
+        weight: bold
+        size: 24px
+    background-color: #fff
+    border: 2px solid #f15921
+    padding: 18px 40px
+    border-radius: 5px
+    margin: 0
+    white-space: nowrap
+    margin: 15px 0
