@@ -11,6 +11,8 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin: 0;
+  padding: 0;
 }
 
 main {
@@ -25,7 +27,7 @@ main {
 }
 
 main .product_section {
-  margin-top: 80px;
+  margin: 80px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -80,6 +82,70 @@ main .product_section_info_price {
 
 main .product_section_info_buy_btn {
   margin-right: 40px;
+  margin-left: 5px;
+}
+
+main .product_section_info_dop_inf_btn {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+main .description_section {
+  background-color: #f2f2f2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 100px;
+}
+
+main .description_section_elements {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .description_section_elements_item {
+  text-align: center;
+  width: 260px;
+}
+
+main .description_section_elements_item span {
+  display: block;
+  height: 50px;
+  background-image: url("/img/description_iconset.png");
+  background-repeat: no-repeat;
+  margin-top: 65px;
+  margin-bottom: 15px;
+}
+
+main .description_section_elements_item:nth-child(1) span {
+  background-position: center 0;
+}
+
+main .description_section_elements_item:nth-child(2) span {
+  background-position: center -58px;
+}
+
+main .description_section_elements_item:nth-child(3) span {
+  background-position: center -118px;
+}
+
+main .description_section_elements_item:nth-child(4) span {
+  background-position: center -166px;
 }
 
 .main_btn {

@@ -1,14 +1,18 @@
+$main_color: #f15921;
+
 *
     box-sizing: border-box
 body
     display: flex
     flex-direction: column    
+    margin: 0
+    padding: 0
 main
     display: flex
     flex-direction: column
     font-family: Tahoma
     .product_section
-        margin-top: 80px
+        margin: 80px 0
         display: flex
         flex-flow: row wrap
         justify-content: center
@@ -37,27 +41,56 @@ main
                 margin: 48px 0
             &_buy_btn
                 margin-right: 40px
-                
-                
-                
+                margin-left: 5px
+            &_dop_inf_btn
+                margin-left: 5px
+                margin-right: 5px
+    .description_section
+        background-color: #f2f2f2
+        display: flex
+        flex-direction: column
+        align-items: center
+        padding-bottom: 100px
+        &_elements
+            display: flex
+            flex-flow: row wrap
+            justify-content: center
+            &_item
+                text-align: center
+                width: 260px
+                span 
+                    display: block
+                    height: 50px
+                    background-image: url('/img/description_iconset.png')                    
+                    background-repeat: no-repeat
+                    margin-top: 65px
+                    margin-bottom: 15px
+                &:nth-child(1) span
+                    background-position: center 0
+                &:nth-child(2) span
+                    background-position: center -58px
+                &:nth-child(3) span
+                    background-position: center -118px
+                &:nth-child(4) span
+                    background-position: center -166px
 .main_btn
     color: #fff
     text-decoration: none
     font:
         weight: bold
         size: 24px
-    background-color: #f15921
+    background-color: $main_color
     padding: 20px 40px
     border-radius: 5px
     margin: 15px 0
 .alt_btn
-    color: #f15921
+    color: $main_color
     text-decoration: none
     font:
         weight: bold
         size: 24px
     background-color: #fff
-    border: 2px solid #f15921
+    border: 2px solid $main_color
     padding: 18px 40px
     border-radius: 5px
     margin: 0
