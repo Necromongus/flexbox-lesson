@@ -17,16 +17,7 @@ main
         flex-flow: row wrap
         justify-content: center
         img
-            margin-right: 75px
-        h1 
-            font-size: 48px
-            margin-bottom: 0
-        h2 
-            margin-top: 7px
-            padding-left: 1px
-            font:
-                size: 30px  
-                weight: normal      
+            margin-right: 75px    
         &_info
             width: 550px
             &_buttons
@@ -51,28 +42,40 @@ main
         flex-direction: column
         align-items: center
         padding-bottom: 100px
-        &_elements
-            display: flex
-            flex-flow: row wrap
-            justify-content: center
-            &_item
-                text-align: center
-                width: 260px
-                span 
-                    display: block
-                    height: 50px
-                    background-image: url('../img/description_iconset.png')                    
-                    background-repeat: no-repeat
-                    margin-top: 65px
-                    margin-bottom: 15px
-                &:nth-child(1) span
-                    background-position: center 0
-                &:nth-child(2) span
-                    background-position: center -58px
-                &:nth-child(3) span
-                    background-position: center -118px
-                &:nth-child(4) span
-                    background-position: center -166px
+.section_elements
+    display: flex
+    flex-flow: row wrap
+    justify-content: center
+    &_item
+        text-align: center
+        width: 260px
+        margin: 10px
+        span 
+            display: block
+            height: 50px
+            background-image: url('../img/description_iconset.png')                    
+            background-repeat: no-repeat
+            margin-top: 65px
+            margin-bottom: 15px
+        &:nth-child(1) span
+            background-position: center 0
+        &:nth-child(2) span
+            background-position: center -58px
+        &:nth-child(3) span
+            background-position: center -118px
+        &:nth-child(4) span
+            background-position: center -166px
+
+h1 
+    font-size: 48px
+    margin-bottom: 0
+h2 
+    margin-top: 7px
+    padding-left: 1px
+    font:
+        size: 30px  
+        weight: normal  
+
 .main_btn
     color: #fff
     text-decoration: none
@@ -96,3 +99,10 @@ main
     margin: 0
     white-space: nowrap
     margin: 15px 0
+
+.feedback_section
+    display: flex
+    flex-direction: column
+    align-items: center
+    img
+        width: 260px
