@@ -41,7 +41,8 @@ main .product_section {
 }
 
 main .product_section img {
-  margin-right: 75px;
+  margin: 0px 5px;
+  max-width: 90%;
 }
 
 main .product_section_info {
